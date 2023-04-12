@@ -1,6 +1,9 @@
-mod hal;
+pub mod cpu;
+pub mod op_codes;
+
+#[macro_use]
+extern crate lazy_static;
 
 fn main() {
-    let hal = hal::Cpu::new();
-    println!("Hello, world! HAL: {:?}", hal);
+    println!("Hello, world");
 }
